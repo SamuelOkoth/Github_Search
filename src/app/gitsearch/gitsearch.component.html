@@ -1,0 +1,72 @@
+<div class="try">
+  <div class="banner">
+    <img src="/assets/gitlogo.png" alt="Github Logo">
+    <nav>
+
+      <p appColour><a routerLink='/repositories' routerLinkActive='active'>Repositories</a></p>
+
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="Forms">
+    <h1>Github google <em>search</em>!</h1>
+    <p>App that searches for github users</p>
+    <form (ngSubmit)="findUser()" #gitsearchForm="ngForm">
+      <div class="form-group">
+
+        <input type="text" required class="" id="username" [(ngModel)]="username" name="username" placeholder="Enter Github Username">
+
+        <button type="submit" class="submit" name="button">Search</button><span class="subscribe-span">Click to know more about github search </span>
+      </div>
+    </form>
+
+  </div>
+  <div class="arrow">
+    ↓
+  </div>
+</div>
+
+<div class="container">
+
+
+
+  <div *ngIf="details">
+    <div class="profilecontainer">
+      <div class="profilebox">
+        <img src="{{details.avatar_url}}" alt="Profile Image" class="rounded-circle" alt="Cinque Terre"><br>
+
+        <p><a href="{{details.html_url}}" target="_blank">View profile on Github</a></p>
+      </div>
+      <div class="profilebox2">
+        <p> <b>{{details.name}}</b> ({{details.login}})</p>
+
+        <p *ngIf="details.company">Works at {{details.company}}</p>
+        <p *ngIf="details.location">Located at {{details.location}}</p>
+        <p *ngIf="details.email"><a href="emailto:{{details.email}}" target="_blank"></a>{{details.email}}</p>
+        <p>Followers:{{details.followers}} </p>
+        <p>Following:{{details.following}} </p>
+        <p>Repositories:{{details.public_repos}}</p>
+
+        <p *ngIf="details.bio">{{details.bio}}</p><br>
+        <p *ngIf="details.hireable">Available for hire</p>
+        <p *ngIf="details.blog"><a href="details.blog" target="_blank">{{details.blog}}</a></p><br>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <div *ngFor="let repo of repos">
+    <div class="stylerepos">
+      <h5>{{repo.name}}</h5>
+      <p>{{repo.description}}</p><a href="{{repo.html_url}}" target="_blank">View this project on Github</a>
+    </div>
+  </div>
+
+
+
+</div>
