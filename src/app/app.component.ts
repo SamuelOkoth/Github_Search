@@ -10,5 +10,5 @@ import { GitsearchComponent } from 'src/app/gitsearch/gitsearch.component';
 })
 export class AppComponent {
   title = 'Gitsearch';
-  DateCountPipe:sbhdh;
+  DateCountPipe
 }
