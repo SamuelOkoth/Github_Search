@@ -26,9 +26,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-<!-- #### Code scaffolding
+#### Code scaffolding
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`. -->
+
 
 #### Build
 
@@ -47,7 +48,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Setup/Installation
-To view the website, click or copy (https://perpyotieno.github.io/Github-Search/) to your browser and load it or:
+To view the website, click or copy (https://github.com/SamuelOkoth/Gitsearch) to your browser and load it or:
 * Clone this repository
 * Open a HTML file
 * Open web browser of choice.
@@ -67,12 +68,12 @@ For any inquiries, please reach out to perpetuamary6630@gmail.com
 No known bugs.
 
 ## Creator
-Created by Perpetua Mary
+Created by SAMUEL OKOTH
 
 ## Licence
 MIT License
 
-Copyright (c) [2019] [Perpetua Mary]
+Copyright (c) [2019] [SAMUEL OKOTH]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
