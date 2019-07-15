@@ -62,8 +62,8 @@ To view the website, click or copy (https://github.com/SamuelOkoth/Gitsearch) to
 |  User views input |  Repository Display |   Displays user repositories| User is directed to the Github page  |
 
 ## Support and contact details
-For any inquiries, please reach out to  okothsamuel78@gmail.com
-
+ please reach out to  okothsamuel78@gmail.com
+For further inquiries
 ## Bugs
 No known bugs.
 
